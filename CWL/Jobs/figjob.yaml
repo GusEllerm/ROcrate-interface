@@ -1,0 +1,4 @@
+images: 
+  - {class: File, path: input_files/image1.jpg}
+  - {class: File, path: input_files/image2.jpg}
+  - {class: File, path: input_files/image3.jpg}
