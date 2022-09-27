@@ -1,0 +1,238 @@
+@prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix data: <urn:hash::sha1:> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix id: <urn:uuid:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wf: <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+id:184b96ce-029d-49e0-baaf-254238b7fb07 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:89d8a1a7-c5ab-453a-a8d4-23ccb397aca8 ;
+            prov:atTime "2022-09-27T11:39:24.661344"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genText/example_out> ],
+        [ a prov:Generation ;
+            prov:activity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ;
+            prov:atTime "2022-09-27T11:39:24.784049"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/primary/text> ] ;
+    prov:specializationOf data:1085500e2f89d4d61325d86b25b65eb8a6e3a339 ;
+    cwlprov:basename "hello.txt"^^xsd:string ;
+    cwlprov:nameext ".txt"^^xsd:string ;
+    cwlprov:nameroot "hello"^^xsd:string .
+
+id:c67be269-c0ab-4f37-8476-c4f4644c39aa a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:cfb8572a-ca29-4eb3-a6b4-1e5c402a2594 ;
+            prov:atTime "2022-09-27T11:39:24.780948"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig/example_out> ],
+        [ a prov:Generation ;
+            prov:activity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ;
+            prov:atTime "2022-09-27T11:39:24.784049"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/primary/montage> ] ;
+    prov:specializationOf data:f7bb07dbc37fe59009e1b05d61da81783a1d9881 ;
+    cwlprov:basename "example-fig.png"^^xsd:string ;
+    cwlprov:nameext ".png"^^xsd:string ;
+    cwlprov:nameroot "example-fig"^^xsd:string .
+
+wf:main a wfdesc:Workflow,
+        prov:Entity,
+        prov:Plan ;
+    rdfs:label "Prospective provenance"^^xsd:string ;
+    wfdesc:hasSubProcess <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genText>,
+        <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig> .
+
+data:1085500e2f89d4d61325d86b25b65eb8a6e3a339 a wfprov:Artifact,
+        prov:Entity .
+
+data:47f223ef25c460c70a88c7baf46ae756beb4db93 a wfprov:Artifact,
+        prov:Entity ;
+    prov:value "example-fig.png"^^xsd:string .
+
+data:f7bb07dbc37fe59009e1b05d61da81783a1d9881 a wfprov:Artifact,
+        prov:Entity .
+
+id:08965411-c50f-4e03-9724-c5ff8a84a65c a prov:Agent ;
+    prov:actedOnBehalfOf id:6f3760c5-a3df-4d93-a98c-79f6c4d6bc42 .
+
+id:1d61645d-b995-4e46-812b-ad9b89e68db3 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:1b3117a206bed0757bdc71250f281341eaa7afb7 ;
+    cwlprov:basename "hello.tar"^^xsd:string ;
+    cwlprov:nameext ".tar"^^xsd:string ;
+    cwlprov:nameroot "hello"^^xsd:string .
+
+id:222d4cb8-27df-42bb-8f32-dd130bd7d2c5 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:5105dc214011a56e34a694563250db6a005806d6 ;
+    cwlprov:basename "image2.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image2"^^xsd:string .
+
+id:38188c97-8511-4a2c-8c4f-a6d489e25e63 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:11464797bc5ee392c33092c07279a113e754b94f ;
+    cwlprov:basename "image3.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image3"^^xsd:string .
+
+id:54cdee06-acde-4f9b-9d91-38c13a767423 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:11464797bc5ee392c33092c07279a113e754b94f ;
+    cwlprov:basename "image3.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image3"^^xsd:string .
+
+id:591ece33-772c-4d44-9637-290d67a7e380 a wfprov:Artifact,
+        prov:Collection,
+        prov:Entity ;
+    prov:hadMember id:54cdee06-acde-4f9b-9d91-38c13a767423,
+        id:836333f9-5b6f-4fc7-a949-e1011b63c634,
+        id:a6a0fafc-f74b-46c7-b3e3-7439f6aca468 .
+
+id:5cfc1a1f-b2a6-42dd-8c41-78a4baa03d04 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:1b3117a206bed0757bdc71250f281341eaa7afb7 ;
+    cwlprov:basename "hello.tar"^^xsd:string ;
+    cwlprov:nameext ".tar"^^xsd:string ;
+    cwlprov:nameroot "hello"^^xsd:string .
+
+id:6f3760c5-a3df-4d93-a98c-79f6c4d6bc42 a schema:Person,
+        prov:Agent,
+        prov:Person ;
+    rdfs:label "Augustus Ellerm"^^xsd:string ;
+    schema:name "Augustus Ellerm"^^xsd:string ;
+    foaf:name "Augustus Ellerm"^^xsd:string .
+
+id:836333f9-5b6f-4fc7-a949-e1011b63c634 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:bec20eb81405527155952546a5257c319c06cd75 ;
+    cwlprov:basename "image1.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image1"^^xsd:string .
+
+id:89d8a1a7-c5ab-453a-a8d4-23ccb397aca8 a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/genText"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genText> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-09-27T11:39:24.661323"^^xsd:dateTime ;
+            prov:hadActivity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-09-27T11:39:24.654453"^^xsd:dateTime ;
+            prov:hadActivity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-09-27T11:39:24.655730"^^xsd:dateTime ;
+            prov:entity id:5cfc1a1f-b2a6-42dd-8c41-78a4baa03d04 ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genText/tarfile> ] ;
+    prov:wasAssociatedWith id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde .
+
+id:8fd7b764-23a5-4d84-8d63-6aab9fc63393 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:bec20eb81405527155952546a5257c319c06cd75 ;
+    cwlprov:basename "image1.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image1"^^xsd:string .
+
+id:a6a0fafc-f74b-46c7-b3e3-7439f6aca468 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:5105dc214011a56e34a694563250db6a005806d6 ;
+    cwlprov:basename "image2.jpg"^^xsd:string ;
+    cwlprov:nameext ".jpg"^^xsd:string ;
+    cwlprov:nameroot "image2"^^xsd:string .
+
+id:cfb8572a-ca29-4eb3-a6b4-1e5c402a2594 a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/genfig"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-09-27T11:39:24.780927"^^xsd:dateTime ;
+            prov:hadActivity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-09-27T11:39:24.666365"^^xsd:dateTime ;
+            prov:hadActivity id:c7c53b3f-799d-46f6-8296-b8786f284f37 ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-09-27T11:39:24.669738"^^xsd:dateTime ;
+            prov:entity id:591ece33-772c-4d44-9637-290d67a7e380 ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig/images> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-09-27T11:39:24.670184"^^xsd:dateTime ;
+            prov:entity data:47f223ef25c460c70a88c7baf46ae756beb4db93 ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig/montage> ] ;
+    prov:wasAssociatedWith id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde .
+
+id:e2b52efa-b120-49f2-8217-235cfd719e5b a wfprov:Artifact,
+        prov:Collection,
+        prov:Entity ;
+    prov:hadMember id:222d4cb8-27df-42bb-8f32-dd130bd7d2c5,
+        id:38188c97-8511-4a2c-8c4f-a6d489e25e63,
+        id:8fd7b764-23a5-4d84-8d63-6aab9fc63393 .
+
+<arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genText> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+<arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/genfig> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+data:11464797bc5ee392c33092c07279a113e754b94f a wfprov:Artifact,
+        prov:Entity .
+
+data:1b3117a206bed0757bdc71250f281341eaa7afb7 a wfprov:Artifact,
+        prov:Entity .
+
+data:5105dc214011a56e34a694563250db6a005806d6 a wfprov:Artifact,
+        prov:Entity .
+
+data:bec20eb81405527155952546a5257c319c06cd75 a wfprov:Artifact,
+        prov:Entity .
+
+id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde a wfprov:WorkflowEngine,
+        prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "cwltool 3.1.20220913185150"^^xsd:string ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-09-27T11:39:24.629514"^^xsd:dateTime ;
+            prov:hadActivity id:08965411-c50f-4e03-9724-c5ff8a84a65c ] .
+
+id:c7c53b3f-799d-46f6-8296-b8786f284f37 a wfprov:WorkflowRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan wf:main ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2022-09-27T11:39:24.784121"^^xsd:dateTime ;
+            prov:hadActivity id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2022-09-27T11:39:24.629564"^^xsd:dateTime ;
+            prov:hadActivity id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2022-09-27T11:39:24.652040"^^xsd:dateTime ;
+            prov:entity id:e2b52efa-b120-49f2-8217-235cfd719e5b ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/images> ],
+        [ a prov:Usage ;
+            prov:atTime "2022-09-27T11:39:24.653045"^^xsd:dateTime ;
+            prov:entity id:1d61645d-b995-4e46-812b-ad9b89e68db3 ;
+            prov:hadRole <arcp://uuid,c7c53b3f-799d-46f6-8296-b8786f284f37/workflow/packed.cwl#main/tarfile> ] ;
+    prov:startedAtTime "2022-09-27T11:39:24.629531"^^xsd:dateTime ;
+    prov:wasAssociatedWith id:7df1fce4-2f1b-4b61-bd2e-0d0fee3f7dde .
+

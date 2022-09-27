@@ -1,0 +1,40 @@
+{
+    "tarfile": {
+        "class": "File",
+        "location": "../data/1b/1b3117a206bed0757bdc71250f281341eaa7afb7",
+        "size": 2048,
+        "basename": "hello.tar",
+        "nameroot": "hello",
+        "nameext": ".tar",
+        "checksum": "sha1$1b3117a206bed0757bdc71250f281341eaa7afb7"
+    },
+    "images": [
+        {
+            "class": "File",
+            "location": "../data/be/bec20eb81405527155952546a5257c319c06cd75",
+            "size": 138684,
+            "basename": "image1.jpg",
+            "nameroot": "image1",
+            "nameext": ".jpg",
+            "checksum": "sha1$bec20eb81405527155952546a5257c319c06cd75"
+        },
+        {
+            "class": "File",
+            "location": "../data/51/5105dc214011a56e34a694563250db6a005806d6",
+            "size": 113067,
+            "basename": "image2.jpg",
+            "nameroot": "image2",
+            "nameext": ".jpg",
+            "checksum": "sha1$5105dc214011a56e34a694563250db6a005806d6"
+        },
+        {
+            "class": "File",
+            "location": "../data/11/11464797bc5ee392c33092c07279a113e754b94f",
+            "size": 180374,
+            "basename": "image3.jpg",
+            "nameroot": "image3",
+            "nameext": ".jpg",
+            "checksum": "sha1$11464797bc5ee392c33092c07279a113e754b94f"
+        }
+    ]
+}

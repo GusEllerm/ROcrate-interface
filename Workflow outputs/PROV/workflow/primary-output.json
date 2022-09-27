@@ -1,0 +1,24 @@
+{
+    "montage": {
+        "location": "../data/f7/f7bb07dbc37fe59009e1b05d61da81783a1d9881",
+        "basename": "example-fig.png",
+        "nameroot": "example-fig",
+        "nameext": ".png",
+        "class": "File",
+        "checksum": "sha1$f7bb07dbc37fe59009e1b05d61da81783a1d9881",
+        "size": 222953,
+        "http://commonwl.org/cwltool#generation": 0,
+        "@id": "urn:uuid:c67be269-c0ab-4f37-8476-c4f4644c39aa"
+    },
+    "text": {
+        "location": "../data/10/1085500e2f89d4d61325d86b25b65eb8a6e3a339",
+        "basename": "hello.txt",
+        "nameroot": "hello",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$1085500e2f89d4d61325d86b25b65eb8a6e3a339",
+        "size": 17,
+        "http://commonwl.org/cwltool#generation": 0,
+        "@id": "urn:uuid:184b96ce-029d-49e0-baaf-254238b7fb07"
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2022-09-27T00:15:16+00:00",
+            "hasPart": [
+                {
+                    "@id": "packed.cwl"
+                },
+                {
+                    "@id": "primary-job.json"
+                },
+                {
+                    "@id": "primary-output.json"
+                },
+                {
+                    "@id": "example-fig.png"
+                },
+                {
+                    "@id": "hello.txt"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "packed.cwl",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "HowTo"
+            ],
+            "name": "example-workflow-output.cwl",
+            "programmingLanguage": {
+                "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+            }
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+            "@type": "ComputerLanguage",
+            "alternativeName": "CWL",
+            "identifier": {
+                "@id": "https://w3id.org/cwl/v1.2/"
+            },
+            "name": "Common Workflow Langauge",
+            "url": {
+                "@id": "https://www.commonwl.org/"
+            }
+        },
+        {
+            "@id": "primary-job.json",
+            "@type": [
+                "File",
+                "HowTo"
+            ],
+            "name": "Workflow inputs",
+            "programmingLanguage": {
+                "@id": "https://www.json.org/json-en.html"
+            }
+        },
+        {
+            "@id": "primary-output.json",
+            "@type": [
+                "File",
+                "HowTo"
+            ],
+            "name": "Workflow oututs",
+            "programmingLanguage": {
+                "@id": "https://www.json.org/json-en.html"
+            }
+        },
+        {
+            "@id": "https://www.json.org/json-en.html",
+            "@type": "ComputerLanguage",
+            "alternativeName": "JSON",
+            "name": "JavaScript Object Notation"
+        },
+        {
+            "@id": "example-fig.png",
+            "@type": "File",
+            "PROV_ID": "",
+            "encodingFormat": "image/png",
+            "name": "Figure1"
+        },
+        {
+            "@id": "hello.txt",
+            "@type": "File",
+            "PROV_ID": "",
+            "encodingFormat": ".txt",
+            "name": "Figure1"
+        }
+    ]
+}

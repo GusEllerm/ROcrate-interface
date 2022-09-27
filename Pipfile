@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 cwltool = "*"
+rocrate = "*"
 
 [dev-packages]
 
